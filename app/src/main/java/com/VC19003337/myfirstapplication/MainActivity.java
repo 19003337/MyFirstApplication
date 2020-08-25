@@ -2,6 +2,9 @@ package com.VC19003337.myfirstapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,7 +40,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Toast.makeText( MainActivity.this, "Spy vs Spy!!!", Toast.LENGTH_SHORT).show();
+                //Toast.makeText( MainActivity.this, "Spy vs Spy!!!", Toast.LENGTH_SHORT).show();
+                //Start the activity connect to the specified class
+                Intent i = new Intent(MainActivity.this, Receiver.class);
+                startActivity(i);
             }
         });
 
@@ -45,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Toast.makeText( MainActivity.this, "What's up!!!", Toast.LENGTH_SHORT).show();
+                //Toast.makeText( MainActivity.this, "What's up!!!", Toast.LENGTH_SHORT).show();
             }
         });
 

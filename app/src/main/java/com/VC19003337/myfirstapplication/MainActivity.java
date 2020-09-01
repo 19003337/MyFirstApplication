@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     Button btn_ClickMe;
     ImageView img1, img2, img3, img4;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 //Toast.makeText( MainActivity.this, "What's up!!!", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(MainActivity.this, UnicornScreen.class);
+                startActivity(i);
             }
         });
 
